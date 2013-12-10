@@ -70,6 +70,11 @@ module VagrantPlugins
         Cap::SuSE::ZypperCacheDir
       end
 
+      guest_capability 'linux', 'test_kitchen_cache_dir' do
+        require_relative 'cap/linux/test_kitchen_cache_dir'
+        Cap::Linux::TestKitchenCacheDir
+      end
+
       # TODO: This should be generic, we don't want to hard code every single
       #       possible provider action class that Vagrant might have
       ensure_single_cache_root = lambda do |hook|
