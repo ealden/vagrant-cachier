@@ -43,3 +43,4 @@ require_relative "bucket/apt_cacher"
 require_relative "bucket/composer"
 require_relative "bucket/npm"
 require_relative "bucket/zypper"
+require_relative 'bucket/test_kitchen'
